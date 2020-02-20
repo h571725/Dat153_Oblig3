@@ -13,16 +13,6 @@ export default function CameraComponent() {
     })();
   }, []);
 
-  const takePicture = () => {
-    if (this.camera) {
-      this.camera.takePictureAsync({ onPictureSaved: logPhoto });
-    }
-  };
-
-  const logPhoto = photo => {
-    console.log(photo);
-  };
-
   if (hasPermission === null) {
     return <View />;
   }
@@ -55,7 +45,7 @@ export default function CameraComponent() {
           >
             <Text style={{ fontSize: 18, marginBottom: 10, color: "white" }}>
               {" "}
-              Flip (Camera function is not implemented){" "}
+              Flip{" "}
             </Text>
           </TouchableOpacity>
         </View>

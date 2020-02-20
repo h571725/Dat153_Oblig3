@@ -22,16 +22,16 @@ const Demo3 = () => {
             "I'm an alert dialog :)",
             [
               {
-                text: "Neutral (Later)",
+                text: "Neutral Button",
                 onPress: () => console.log("Ask me later pressed")
               },
               {
-                text: "Negative (NO)",
+                text: "Cancel",
                 onPress: () => console.log("Cancel Pressed"),
                 style: "cancel"
               },
               {
-                text: "Positive (Yes)",
+                text: "OK",
                 onPress: () => console.log("OK Pressed")
               }
             ],
