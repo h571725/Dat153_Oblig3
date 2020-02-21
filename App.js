@@ -5,6 +5,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Demo1 from "./screens/Demo1";
 import Demo2 from "./screens/Demo2";
 import Demo3 from "./screens/Demo3";
+import Demo4 from "./screens/Demo4";
 
 function HomeScreen({ navigation }) {
   return (
@@ -34,6 +35,12 @@ function HomeScreen({ navigation }) {
       >
         <Text>Go to Demo3</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate("Demo4")}
+      >
+        <Text>Go to Demo4</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -48,6 +55,7 @@ function App() {
         <Stack.Screen name="Demo1" component={Demo1} />
         <Stack.Screen name="Demo2" component={Demo2} />
         <Stack.Screen name="Demo3" component={Demo3} />
+        <Stack.Screen name="Demo4" component={Demo4} />
       </Stack.Navigator>
     </NavigationContainer>
   );

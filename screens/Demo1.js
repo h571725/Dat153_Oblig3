@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, Image, Button, Alert } from "react-native";
 
-const Demo3 = () => {
+const Demo1 = () => {
   return (
     <View
       style={{
@@ -43,4 +43,4 @@ const Demo3 = () => {
   );
 };
 
-export default Demo3;
+export default Demo1;
